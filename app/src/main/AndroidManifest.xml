@@ -18,7 +18,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LinkageActivity"></activity>
+        <activity android:name=".LinkageActivity" />
+        <activity android:name=".WeatherActivity"></activity>
     </application>
 
 </manifest>
