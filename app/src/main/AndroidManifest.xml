@@ -2,8 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.james.coolweather">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
-        android:name="com.james.coolweather.util.MyApplication"
+        android:name=".util.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -16,6 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".LinkageActivity"></activity>
     </application>
 
 </manifest>
