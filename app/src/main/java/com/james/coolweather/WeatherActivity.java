@@ -1,5 +1,6 @@
 package com.james.coolweather;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Build;
@@ -20,6 +21,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.james.coolweather.gson.DailyForecast;
 import com.james.coolweather.gson.Weather;
+import com.james.coolweather.service.AutoUpdateService;
 import com.james.coolweather.util.HttpUtil;
 import com.james.coolweather.util.LogUtil;
 import com.james.coolweather.util.ToastUtil;
@@ -219,6 +221,9 @@ public class WeatherActivity extends AppCompatActivity {
         sportText.setText(sport);
 
         weatherLayout.setVisibility(View.VISIBLE);
+
+        Intent intent = new Intent(this, AutoUpdateService.class);
+        stopService(intent);
     }
 
 

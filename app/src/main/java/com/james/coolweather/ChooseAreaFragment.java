@@ -136,7 +136,7 @@ public class ChooseAreaFragment extends Fragment {
         nextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getContext(),LinkageActivity.class);
+                Intent intent = new Intent(getActivity(),LinkageActivity.class);
                 startActivity(intent);
             }
         });
